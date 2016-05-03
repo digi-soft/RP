@@ -1,0 +1,21 @@
+@mixin easing75{
+    -webkit-transition: all 75ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+   -moz-transition: all 75ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+     -o-transition: all 75ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+        transition: all 75ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+}
+
+@mixin easing150{
+    -webkit-transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+   -moz-transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+     -o-transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+        transition: all 150ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+}
+
+@mixin easing250{
+    -webkit-transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+   -moz-transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+     -o-transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+        transition: all 250ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+}
+

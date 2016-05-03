@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="digi[SOFT], http://www.tealgigisoft.com">
+    <meta name="Published" content="2016">
+    <meta name="copyright" content="http://www.tealgigisoft.com" />
+    <meta name="reply-to" content="info@teamgisoft.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="classification" content="News" />
+    <meta name="google-site-verification" content="..." />
+    <!-- google site doğrulama kodu -->
+    <meta name="abstract" content="HTML meta etiketi tarayıcılara ve arama motorlarına sayfa hakkında bilgiler sağlar." />
+    <meta name="Description" content="Site Açıklaması Gelecek">
+    <meta name="keywords" content="sitenin seo için keywordsleri" />
+    <meta name="robots" content="all, follow" />
+    <meta name="revisit-after" content="7 days">
+    <title>Radio Pub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://lab.nearpod.com/bodymovin/demo/monstruo/bodymovin.js"></script>
+    <script src="js/jquery-2.2.2.min.js"></script>
+</head>
+
+<body>
+
+    <div class="galleryGrid">
+
+        <div class="gridYearGroup" data-renk="">
+            <a href="index.html">
+                <div class="gridPhoto gridYear  gridHomeBack" data-width="lg">
+                    <img id="back" src="img/back-home.png" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="gridYearGroup" data-renk="#ff7f00">
+            <div class="gridPhoto gridYear" data-width="lg">
+
+                <h1><span></span><br/><span></span><br/><span>2016</span><br/><span></span><br/><span></span></h1>
+
+
+            </div>
+            <div onclick="modal('2016')" data-width="lg" class="gridPhoto">
+                <div class="gridDesc">
+                    <p> Şokoparti </p>
+                    <p> 27/04/2016</p>
+                </div>
+                <img src="http://urbantastebud.com/wp-content/uploads/2015/08/nc-food-and-beverage-pub.jpg" alt="">
+
+            </div>
+            <div onclick="modal('2')" data-width="lg" class="gridPhoto">
+                <div class="gridDesc">
+                    <p> Şokoparti </p>
+                    <p> 27/04/2016</p>
+                </div>
+                <img src="https://websummit.net/wp-content/uploads/2015/09/pubsummit.jpg" alt="">
+            </div>
+
+            <div onclick="modal('3')" class="gridPhoto" data-width="lg">
+                <div class="gridDesc">
+                    <p> Şokoparti </p>
+                    <p> 27/04/2016</p>
+                </div>
+                <img src="http://www.irlandando.it/wp-content/uploads/pub-irlanda.jpg" alt="">
+            </div>
+
+            <div onclick="modal('4')" class="gridPhoto gridVideo" data-width="lg">
+                <div class="gridDesc">
+                    <p> Şokoparti </p>
+                    <p> 27/04/2016</p>
+                </div>
+                <img src="https://i.ytimg.com/vi/JVY1dCdz1k4/maxresdefault.jpg" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+    <div data-modal="2016" class="digimodal etkinlik">
+        <div class="modalwrapper">
+
+            <div id="ileri"><img src="img/right-arrow.png" alt=""></div>
+            <div id="geri"><img src="img/left-arrow.png" alt=""></div>
+
+            <div class="modalcontainer">
+                <div class="modalslider">
+                    <ul>
+                        <li> <img src="http://urbantastebud.com/wp-content/uploads/2015/08/nc-food-and-beverage-pub.jpg" alt="Haluk Levent Radio Pub Konseri"></li>
+                        <li> <img src="https://websummit.net/wp-content/uploads/2015/09/pubsummit.jpg" alt="Husnu Arkan Radio Pub Konseri"></li>
+                        <li> <img src="http://www.irlandando.it/wp-content/uploads/pub-irlanda.jpg" alt="Husnu Arkan Radio Pub Konseri">                            </li>
+                        <li>   <iframe src="https://www.youtube.com/embed/2SzZjB76Nrc" frameborder="0" allowfullscreen></iframe>  </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/digi_framework.js"></script>
+<script src="js/master.js"></script>
+<script>
+    $(function(){
+        $('.gridYearGroup').eq(1).find('.gridYear').click();
+    })
+
+</script>
+
+</html>

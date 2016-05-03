@@ -1,0 +1,331 @@
+.bizWrapper {
+    width: 100%;
+    background-color: #000;
+}
+
+.backBlack {
+    // body 
+    background-color: #000;
+}
+
+.fadeIn {
+    display: none;
+}
+
+.topCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/biz_topCover.jpg) center center no-repeat;
+    background-size: 130vw;
+    height: 100vh;
+    width: 100vw;
+    .topCoverMed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: 145vw;
+        height: 100vh;
+        width: 100vw;
+    }
+    .biz_logo {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        margin-left: -225px;
+        width: 450px;
+        z-index: 99;
+    }
+}
+
+.relWrapper {
+    font-family: 'Lato', 'serif';
+    letter-spacing: -1px;
+    position: relative;
+    width: 100%;
+    margin-top: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    color: #fff;
+    display: block;
+    z-index: 100;
+    .iletisim {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-color: #000;
+        text-align: center;
+        .radio {
+            color: #fff;
+            font-size: 1.4rem;
+            margin: 20px 0px;
+            .rad {
+                color: #ff7f00;
+                font-weight: 900;
+                font-size: 1.5rem;
+            }
+            .tag {
+                position: relative;
+                color: 888888;
+                padding-bottom: 5px;
+            }
+            .denk {
+                color: #333;
+            }
+        }
+        .performans {
+            @include easing250;
+            font-size: 6.5rem;
+            font-weight: 900;
+        }
+        .muzk {
+            @include easing250;
+            font-size: 6.5rem;
+            font-weight: 100;
+            letter-spacing: 3px;
+        }
+        .line {
+            margin: 30px auto;
+            width: 80px;
+            height: 10px;
+            background-color: #ff7f00;
+            display: block;
+        }
+        .openHours {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        .openHoursBottom {
+            font-size: 1.38rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+        .adr1 {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin: 4px 0px;
+        }
+        .tel {
+            font-size: 1.25rem;
+            font-weight: 900;
+            margin: 4px 0px;
+            color: #ff7f00;
+            letter-spacing: 1px;
+        }
+        .buttonWrapper {
+            margin: 50px auto;
+            width: 220px;
+            .buttondiv {
+                @include easing250;
+                height: 35px;
+                width: 100px;
+                border: 4px solid #fff;
+                display: block;
+                margin-left: -2px;
+                float: left;
+                color: #ff7f00;
+                cursor: pointer;
+                font-weight: 900;
+                letter-spacing: 2px;
+                &:hover, &:hover * {
+                    color: #fff;
+                    border-color: #fff;
+                }
+                span {
+                    position: relative;
+                    top: 8.5px;
+                }
+            }
+        }
+    }
+    .iceceklerimizSec, .bulusmaNoktaniz {
+        width: 100%;
+        height: 680px;
+        margin-left: -450px;
+        opacity: .5;
+        color: #000;
+        .left {
+            box-sizing: border-box;
+            padding: 70px;
+            background-color: #fff;
+            display: block;
+            float: left;
+            width: 50%;
+            height: 680px;
+            min-width: 500px;
+            .ana_baslik, .alt_baslik {
+                font-size: 3.7rem;
+                text-align: right;
+                margin-right: 200px;
+            }
+            .ana_baslik {
+                font-weight: 900;
+            }
+            .alt_baslik {
+                font-weight: 100;
+            }
+            .line {
+                float: right;
+                width: 80px;
+                height: 10px;
+                background-color: #ff7f00;
+                display: block;
+                margin: 30px 0px 30px 0px;
+            }
+            .aciklama {
+                text-transform: uppercase;
+                color: #AAA;
+                font-weight: 300;
+                line-height: 27px;
+                letter-spacing: 1px;
+                font-size: 1.4rem;
+                text-align: right;
+                opacity: 0;
+                span {
+                    color: #ff7f00;
+                    font-weight: 400;
+                }
+            }
+        }
+        .right {
+            box-sizing: border-box;
+            background-color: gray;
+            display: block;
+            float: left;
+            width: 50%;
+            height: 680px;
+            background: url(../img/coctail.jpg) center center no-repeat;
+            background-size: 980px;
+            min-height: 680px;
+            min-width: 500px;
+        }
+    }
+}
+
+.button {
+    @include easing250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    color: #ff7f00;
+    border: 3px solid #ff7f00;
+    float: right;
+    font-weight: 600;
+    margin: 40px 0px 10px 0px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    &:hover, &:hover * {
+        border-color: #000;
+        color: #000;
+    }
+}
+
+///////
+.muzikaltyapi {
+    width: 100%;
+    height: 680px;
+    opacity: .5;
+    color: #fff;
+    text-align: left;
+    margin-left: 450px;
+    .right {
+        box-sizing: border-box;
+        padding: 70px;
+        background-color: #000;
+        display: block;
+        float: right;
+        width: 50%;
+        height: 680px;
+        min-width: 500px;
+        .ana_baslik, .alt_baslik {
+            font-size: 3.7rem;
+            margin-left: 200px;
+        }
+        .ana_baslik {
+            font-weight: 900;
+        }
+        .alt_baslik {
+            font-weight: 100;
+        }
+        .line {
+            float: left;
+            width: 80px;
+            height: 10px;
+            background-color: #ff7f00;
+            display: block;
+            margin: 30px 0px 30px 0px;
+        }
+        .aciklama {
+            text-transform: uppercase;
+            color: #AAA;
+            font-weight: 300;
+            line-height: 27px;
+            letter-spacing: 1px;
+            font-size: 1.4rem;
+            opacity: 0;
+            span {
+                color: #ff7f00;
+                font-weight: 400;
+            }
+        }
+    }
+    .left {
+        box-sizing: border-box;
+        background-color: gray;
+        display: block;
+        float: left;
+        width: 50%;
+        height: 680px;
+        background: url(../img/coctail.jpg) center center no-repeat;
+        background-size: 980px;
+        min-height: 680px;
+        min-width: 500px;
+    }
+    .button {
+        float: left !important;
+        &:hover, &:hover * {
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+}
+
+.bizFooter {
+    box-sizing: border-box;
+    padding: 100px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .footImg {
+        margin: 50px 0px;
+    }
+    .thinline {
+        height: 1px;
+        background-color: #555;
+        display: block;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .adr1 {
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin: 4px 0px;
+    }
+    .tel {
+        font-size: 1.25rem;
+        font-weight: 900;
+        margin: 4px 0px;
+        color: #ff7f00;
+        opacity: .7;
+        letter-spacing: 1px;
+    }
+}

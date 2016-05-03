@@ -1,0 +1,562 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after {
+    content: '';
+    content: none;
+}
+
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* @media (min-width:1320px) and (max-width:1365px) {
+    .pagetopskin {
+        width: 986px !important;
+        margin-left: -493px !important;
+        iframe {
+            width: 1986px !important;
+        }
+    }
+    .bodyleft {
+        margin-left: -653px !important;
+    }
+    .bodyright {
+        margin-left: 493px !important;
+    }
+}
+
+   @media (min-width:1366px) {
+    .container {
+        width: 980px !important;
+    }
+    .pagetopskin {
+        width: 976px !important;
+        margin-left: -493px !important;
+      
+    }
+  
+    .bodyleft {
+        margin-left: -673px !important;
+    }
+    .bodyright {
+        margin-left: 513px !important;
+    }
+}
+
+ */
+
+
+/*@media (min-width:1281px) and (max-width:1599px) {
+    .pagetopskin {
+        width: 1000px !important;
+        margin-left: -500px !important;
+        iframe , img {
+            width: 1000px !important;
+        }
+        
+    }
+    .bodyleft {
+        margin-left: -658px !important;
+    }
+    .bodyright {
+        margin-left: 498px !important;
+    }
+}
+*/
+
+body {
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+.preloader{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: 9999999999;
+    position: absolute;
+    background: #463268;
+}
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+.row {
+    width: 100%;
+}
+
+.fl {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+
+/*.sizetext {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    font-weight: 700;
+    z-index: 9999;
+} */
+
+body {
+    overflow-x: hidden;
+}
+
+#back {
+    position: relative;
+    z-index: -1;
+}
+
+.sosyalMedya {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 9999999999;
+}
+
+.sosyalMedya span {
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+    margin-left: 5px;
+    cursor: pointer;
+    z-index: 999999;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#facebook:before {
+    background-image: url("../img/facebook.svg");
+}
+
+#facebook:after {
+    background-image: url("../img/facebook_color.svg");
+}
+
+#twitter:before {
+    background-image: url("../img/twitter.svg");
+}
+
+#twitter:after {
+    background-image: url("../img/twitter_color.svg");
+}
+
+#instagram:before {
+    background-image: url("../img/instagram.svg");
+}
+
+#instagram:after {
+    background-image: url("../img/instagram_color.svg");
+}
+
+#googleplus:before {
+    background-image: url("../img/googleplus.svg");
+}
+
+#googleplus:after {
+    background-image: url("../img/googleplus_color.svg");
+}
+
+.sosyalMedya span:before, .sosyalMedya span:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
+}
+
+.sosyalMedya span:before {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.sosyalMedya span:after {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
+.sosyalMedya span:hover:before {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.sosyalMedya span:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+nav {
+    position: fixed;
+    top: 3%;
+    left: 2%;
+    z-index: 999999999;
+    ul {
+        position: relative;
+        list-style-type: none;
+        li {
+            float: left;
+            margin: 0 10px;
+            font-family: 'humble', normal;
+            a {
+                color: #fff;
+                opacity: .8;
+                font-size: 19px;
+                font-weight: 300;
+                text-transform: uppercase;
+                transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+                font-family: 'humble', normal;
+                &:hover {
+                    color: #D2882B;
+                }
+            }
+        }
+    }
+}
+
+.dragOpa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .1);
+    z-index: 999999;
+}
+
+.scrollcontainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 99999;
+    /*    #pos06 {
+      top: 13.5%;
+      right: 12.6%;
+      z-index: 129;
+  } */
+    /*   #pos09 {
+      top: 15%;
+      right: 20.5%;
+      z-index: 128;
+  } */
+    /* #pos032 {
+      top: 25%;
+      right: 79.4%;
+      z-index: 220;
+  } */
+}
+
+.scrollcontainer .posRole {
+    position: absolute;
+    z-index: 999999;
+    width: 11%;
+    height: auto;
+    top: 0%;
+    right: 0%;
+    opacity: 0;
+    transition: opacity 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -webkit-transition: opacity 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -m-transition: opacity 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -o-transition: opacity 300ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+
+.scrollcontainer .posRole:first-child {
+    display: block;
+    opacity: 1;
+}
+
+#logo {
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    width: 25%;
+    z-index: 9999999999;
+}
+
+.scrollcontainer #motto {
+    top: 50%;
+    right: 15%;
+    opacity: 1
+}
+
+.scrollcontainer #drag {
+    top: 60%;
+    right: 15%;
+    opacity: 1
+}
+
+.scrollcontainer #ok {
+    top: 60%;
+    right: 26%;
+    opacity: 1;
+    width: 2%
+}
+
+.scrollcontainer #ps00 {
+    top: 17%;
+    right: -0.5%;
+    z-index: 135;
+    opacity: 1;
+}
+
+.scrollcontainer #pos01 {
+    top: 24%;
+    right: 0.3%;
+    z-index: 134;
+}
+
+.scrollcontainer #pos02 {
+    top: 21%;
+    right: 6.6%;
+    z-index: 133;
+}
+
+.scrollcontainer #pos03 {
+    top: 11.8%;
+    right: 7.9%;
+    z-index: 132;
+    width: 12%;
+}
+
+.scrollcontainer #pos04 {
+    top: 10%;
+    right: 9.5%;
+    z-index: 131;
+    width: 12%;
+}
+
+.scrollcontainer #pos05 {
+    top: 14.5%;
+    right: 11.5%;
+    z-index: 130;
+}
+
+.scrollcontainer #pos07 {
+    top: 13%;
+    right: 13.8%;
+    z-index: 128;
+}
+
+.scrollcontainer #pos08 {
+    top: 11%;
+    right: 19.7%;
+    z-index: 127;
+}
+
+.scrollcontainer #pos010 {
+    top: 16%;
+    right: 21.2%;
+    z-index: 129;
+}
+
+.scrollcontainer #pos011 {
+    top: 31%;
+    right: 24.3%;
+    width: 8%;
+    z-index: 130;
+}
+
+.scrollcontainer #pos012 {
+    width: 10.9%;
+    top: 19%;
+    right: 25.5%;
+    z-index: 131;
+}
+
+.scrollcontainer #pos013 {
+    width: 10.6%;
+    top: 25.3%;
+    right: 26.3%;
+    z-index: 132;
+}
+
+.scrollcontainer #pos014 {
+    top: 23.8%;
+    right: 26.75%;
+    z-index: 133;
+}
+
+.scrollcontainer #pos015 {
+    top: 25%;
+    right: 27.5%;
+    z-index: 134;
+}
+
+.scrollcontainer #pos016 {
+    top: 25%;
+    right: 30%;
+    z-index: 135;
+}
+
+.scrollcontainer #pos017 {
+    top: 27%;
+    right: 32.3%;
+    z-index: 90;
+}
+
+.scrollcontainer #pos018 {
+    top: 28%;
+    right: 44.5%;
+    z-index: 91;
+}
+
+.scrollcontainer #pos019 {
+    top: 31%;
+    right: 45.6%;
+    z-index: 90;
+}
+
+.scrollcontainer #pos020 {
+    top: 25%;
+    right: 47.3%;
+    z-index: 89;
+}
+
+.scrollcontainer #pos021 {
+    top: 23%;
+    right: 49%;
+    z-index: 88;
+}
+
+.scrollcontainer #pos022 {
+    top: 30%;
+    right: 50.9%;
+    z-index: 100;
+}
+
+.scrollcontainer #pos023 {
+    top: 28.5%;
+    right: 51.8%;
+    z-index: 110;
+}
+
+.scrollcontainer #pos024 {
+    top: 29%;
+    right: 52%;
+    z-index: 120;
+}
+
+.scrollcontainer #pos025 {
+    top: 29%;
+    right: 54%;
+    z-index: 130;
+    transform: rotate(9deg);
+}
+
+.scrollcontainer #pos026 {
+    top: 46%;
+    width: 8%;
+    right: 58.12%;
+    z-index: 140;
+}
+
+.scrollcontainer #pos027 {
+    top: 15%;
+    right: 72.7%;
+}
+
+.scrollcontainer #pos028 {
+    top: 13%;
+    right: 74%;
+}
+
+.scrollcontainer #pos029 {
+    top: 21.2%;
+    right: 72.5%;
+    z-index: 140;
+}
+
+.scrollcontainer #pos030 {
+    top: 21%;
+    right: 75.4%;
+    z-index: 200;
+}
+
+.scrollcontainer #pos031 {
+    top: 21%;
+    right: 78%;
+    z-index: 210;
+}
+
+.scrollcontainer #pos033 {
+    top: 28%;
+    right: 80.5%;
+    z-index: 230;
+    width: 10.3%;
+}
+
+.scrollcontainer #pos034 {
+    top: 10.5%;
+    right: 82.5%;
+    z-index: 240;
+}
+
+.scrollcontainer #pos035 {
+    top: 3%;
+    right: 84.5%;
+    z-index: 250;
+    transform: rotateZ(-6deg);
+}
+
+.scrollcontainer #masa {
+    position: absolute;
+    top: 41.8%;
+    right: 24.5%;
+    z-index: 9999;
+    width: 9%;
+}
+
+
+/*# sourceMappingURL=style.css.map */

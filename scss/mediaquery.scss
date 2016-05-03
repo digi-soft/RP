@@ -1,0 +1,123 @@
+ /* @media (min-width:1320px) and (max-width:1365px) {
+    .pagetopskin {
+        width: 986px !important;
+        margin-left: -493px !important;
+        iframe {
+            width: 1986px !important;
+        }
+    }
+    .bodyleft {
+        margin-left: -653px !important;
+    }
+    .bodyright {
+        margin-left: 493px !important;
+    }
+}
+
+   @media (min-width:1366px) {
+    .container {
+        width: 980px !important;
+    }
+    .pagetopskin {
+        width: 976px !important;
+        margin-left: -493px !important;
+      
+    }
+  
+    .bodyleft {
+        margin-left: -673px !important;
+    }
+    .bodyright {
+        margin-left: 513px !important;
+    }
+}
+
+ */
+ /*@media (min-width:1281px) and (max-width:1599px) {
+    .pagetopskin {
+        width: 1000px !important;
+        margin-left: -500px !important;
+        iframe , img {
+            width: 1000px !important;
+        }
+        
+    }
+    .bodyleft {
+        margin-left: -658px !important;
+    }
+    .bodyright {
+        margin-left: 498px !important;
+    }
+}
+*/
+ 
+ @media (max-width: 600px) {
+     .show {
+         display: block !important;
+     }
+     .gridYearGroup {
+         .gridPhoto {
+             display: none;
+
+             .gridDesc {
+                 transform: scale(1) !important;
+             }
+             &:first-child {
+                 display: block !important;
+             }
+         }
+         .gridYear {
+             cursor: pointer;
+             display: block !important;
+             p {
+                 font-size: 50px !important;
+                 i {
+                     font-size: 80px !important;
+                 }
+             }
+             span{
+                 font-size: 80px !important;
+             }
+         }
+     }
+     
+     .digimodal {
+         .modalwrapper {
+             .modalcontainer {
+                 .modaldesc{
+                     .modaltarih{
+                         font-size: 5rem !important;
+                     }
+                 }
+                 img{
+                     width: 60% !important;
+                 }
+                 .kapatbuton {
+                     padding: 0 10px !important;
+                 }
+             }
+         }
+     }
+ }
+ 
+ @media (min-width:601px) and (max-width: 900px) {
+     .gridYearGroup {
+         .gridPhoto {
+             .gridDesc {
+             }
+             &:first-child {
+                 display: block !important;
+             }
+         }
+         .gridYear {
+             cursor: pointer;
+             display: block !important;
+             p {
+                 font-size: 40px !important;
+                 i {
+                     font-size: 50px !important;
+                 }
+             }
+         }
+     }
+ }
